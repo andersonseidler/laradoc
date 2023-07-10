@@ -95,6 +95,9 @@ Criar um link para a pasta storage na public. Caso já exista, desconsidere o co
 ```sh
 php artisan storage:link
 ```
-
+Utilizar o comando para dar permissão ao user
+```sh
+sudo chown -R "${USER:-$(id -un)}" .
+```
 Acessar o projeto
 [http://localhost:8989](http://localhost:8989)
